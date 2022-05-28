@@ -47,7 +47,7 @@ const Login = () => {
     if(localStorage.getItem('chat-appp-user')){
       navigate('/')
     }
-  }, [])
+  }, [navigate])
 
   const handleSubmit = async (event) => {
     event.preventDefault();

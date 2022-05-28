@@ -26,7 +26,7 @@ const ChatContainer = ({ currentChat, currentUser, socket}) => {
         
       }
       fetchResponse()
-    }, [currentChat])
+    }, [currentChat, currentUser])
     
     const handleSendMessage=async (msg)=>{
         await axios.post(sendMessageRoute,{
@@ -51,7 +51,7 @@ const ChatContainer = ({ currentChat, currentUser, socket}) => {
                 setArrivalMessage({fromSelf: false, message: msg});
           })
       }
-    }, [])
+    }, [socket])
 
     useEffect(() => {
         arrivalMessage && setMessages((prev)=>[...prev, arrivalMessage])
