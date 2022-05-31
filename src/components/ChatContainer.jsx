@@ -157,7 +157,7 @@ const Container = styled.div`
             .content{
                 max-width: 40%;
                 overflow-wrap: break-word;
-                padding: 1rem;
+                padding: 0.7rem;
                 font-size: 1.1rem;
                 border-radius: 1rem;
                 color: #d1d1d1;
