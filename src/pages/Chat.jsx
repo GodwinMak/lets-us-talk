@@ -22,7 +22,7 @@ const Chat = () => {
   useEffect(() => {
     const fetchItem = async () => {
       if (!localStorage.getItem("chat-app-user")) {
-        navigate("/login")
+        navigate("/")
       }else{
         setCurrentUser(await JSON.parse(localStorage.getItem("chat-app-user")))
         setIsloading(true);

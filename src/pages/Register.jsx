@@ -57,7 +57,7 @@ const Register = () => {
 
     useEffect(()=> {
     if(localStorage.getItem('chat-appp-user')){
-      navigate("/")
+      navigate("/chat")
     }
   }, [navigate])
 
@@ -75,7 +75,7 @@ const Register = () => {
             }
             if(data.status===true){
                 localStorage.setItem('chat-app-user', JSON.stringify(data.user))
-                navigate("/");
+                navigate("/chat");
             }
         };
     }
