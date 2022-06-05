@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from "../assets/Let's talk-logos_white.png"
+import Logo from "../assets/Let's talk-logos_black.png"
 
 
 import styled from "styled-components"
@@ -123,7 +123,7 @@ const FormContainer = styled.div`
             height: 8rem;
         }
         h1{
-            color: #fff;
+            color: #000;
             text-transform: uppercase;
         } 
     }
@@ -131,8 +131,8 @@ const FormContainer = styled.div`
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            background: #00000076;
-            border-radius: 1rem;
+            background: #f8f8f8;
+            // border-radius: 1rem;
             padding: 2rem 4rem;
             input{
                 background: trasparent;
@@ -165,7 +165,7 @@ const FormContainer = styled.div`
                 }
             }
             span{
-                color: #f8f8f8;
+                color: #000;
                 text-tranfrom: uppercase;
                 a{
                     color:#4e0eff;

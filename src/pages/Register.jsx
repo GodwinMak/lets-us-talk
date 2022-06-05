@@ -121,7 +121,7 @@ const Register = () => {
                 />
                 <button type='submit'>Create User</button>
                 <span>
-                    Already have an Account ? <Link to='/login'>Sign In</Link>
+                    Already have an Account ? <Link to='/'>Sign In</Link>
                 </span>
 
             </form>
@@ -158,7 +158,7 @@ const FormContainer = styled.div`
             flex-direction: column;
             gap: 2rem;
             background: #00000076;
-            border-radius: 1rem;
+            // border-radius: 1rem;
             padding: 2rem 4rem;
             input{
                 background: trasparent;
