@@ -1,4 +1,4 @@
- export const host = "https://l-talk.herokuapp.com/l-talk/";
+ export const host = "https://l-talk.herokuapp.com/";
 
 export const registerRoute = `${host}/api/auth/register`
 export const loginRoute = `${host}/api/auth/`
